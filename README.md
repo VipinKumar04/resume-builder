@@ -70,7 +70,6 @@ Resume-Builder/
 ## 🌟 Future Improvements
 
 * Add Multiple Resume Templates
-* Download Resume as PDF
 * Add Profile Picture Upload
 * Add Dark Mode
 * Store Data using Local Storage
