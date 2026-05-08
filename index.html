@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left" id="left">
+        
+        <div id="personal">
+            <h2>Personal Details</h2>
+            <input type="text" id="name" placeholder="Full Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="text" id="phone" placeholder="Phone"><br>
+            <input type="text" id="address" placeholder="Address"><br>
+            <button onclick="addPersonal()">Add</button>
+            <hr>
+        </div>
+ 
+        <div id="education">
+            <h2>Education</h2>
+            <input type="text" id="degree" placeholder="Degree"><br>
+            <input type="text" id="college" placeholder="College"><br>
+            <input type="text" id="year" placeholder="Year"><br>
+            <input type="text" id="marks" placeholder="CGPA/Percentage"><br>
+            <button onclick="addEducation()">Add</button>
+            <hr>
+        </div>
+
+        <div id="experience">
+            <h2>Experience</h2>
+            <input type="text" id="company" placeholder="Company"><br>
+            <input type="text" id="role" placeholder="Role"><br>
+            <input type="text" id="duration" placeholder="Duration"><br>
+            <textarea id="desc" placeholder="Description"></textarea><br>
+            <button onclick="addExperience()">Add</button>
+            <hr>
+        </div>
+ 
+        <div id="skills">
+            <h2>Skills</h2>
+            <input type="text" id="skill" placeholder="Enter skills (comma separated)"><br>
+            <button onclick="addSkills()">Add</button>
+            <hr>
+        </div>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <input type="text" id="title" placeholder="Project Title"><br>
+            <textarea id="pdesc" placeholder="Description"></textarea><br>
+            <input type="text" id="tech" placeholder="Technologies"><br>
+            <button onclick="addProject()">Finish</button>
+            <hr>
+        </div>
+            
+    </div>
+
+    <div class="right" id="right">
+        <h1 id="resume">My Resume</h1>
+        <h3>Personal Details</h3>
+        <h3 id="rname"></h3>
+        <p id="remail"></p>
+        <p id="rphone"></p>
+        <p id="raddress"></p>
+        <p id="rsummary"></p>
+
+        <button  class="editbtn" onclick="editPersonal()">Edit</button>
+
+        <h3>Education</h3>
+        <p id="reducation"></p>
+
+        <button class="editbtn" onclick="editEducation()">Edit</button>
+
+        <h3>Experience</h3>
+        <p id="rexperience"></p>
+
+        <button class="editbtn" onclick="editExperience()">Edit</button>
+
+        <h3>Skills</h3>
+        <p id="rskills"></p>
+
+        <button class="editbtn" onclick="editSkills()">Edit</button>
+
+        <h3>Projects</h3>
+        <p id="rprojects"></p>
+
+        <button class="editbtn" onclick="editProjects()">Edit</button>
+    
+        <button id="savebtn" onclick="saveResume()">Save Resume</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
