@@ -79,8 +79,6 @@ Resume-Builder/
 
 ## 🖥️ Live Demo
 
-Add your deployed project link here:
-
 ```bash
 https://vipinkumar04.github.io/resume-builder/
 ```
